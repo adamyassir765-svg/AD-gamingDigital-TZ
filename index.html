@@ -1,6 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome AD-GAMING DIGITAL
+    <title>AD-gaming digital.tz | Home</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* CSS ZA RANGI NA MUUNDO */
+        :root {
+            --primary: #00f2ff; /* Rangi ya Cyan/Blue neon */
+            --secondary: #7000ff; /* Rangi ya Zambarau neon */
+            --dark: #050505;
+            --card-bg: #121212;
+            --text: #ffffff;
+            --whatsapp-green: #25D366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--text);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.95);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--secondary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .btn-whatsapp {
+            padding: 15px 35px;
+            background: var(--whatsapp-green);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+            background: #1eb954;
+        }
+
+        /* Games Section */
+        .games-container {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .placeholder-text {
+            color: #888;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 60px 5% 30px;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-contact {
+            margin: 20px 0;
+        }
+
+        .footer-contact p {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--whatsapp-green);
+        }
+
+        .copyright {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #444;
+            border-top: 1px solid #111;
+            padding-top: 20px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2rem; }
+            header { flex-direction: column; gap: 15px; }
+            nav ul li { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">AD-GAMING<span> DIGITAL.TZ</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://wa.me/255629128219">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AD-GAMING DIGITAL.TZ</h1>
+            <p>Pata michezo bora na huduma za kidijitali kwa haraka na usalama.</p>
+            <a href="https://wa.me/255629128219" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Wasiliana Nasi WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <section class="games-container">
+        <h2 class="section-title"><i class="fas fa-gamepad"></i> Michezo Yetu</h2>
+        <div class="placeholder-text">
+            <p>Gemu mpya na kali zinakuja hivi karibuni! Kwa sasa tunapokea oda maalum kupitia WhatsApp.</p>
+            <br>
+            <i class="fas fa-tools" style="font-size: 3rem; color: var(--secondary);"></i>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">AD-GAMING<span> DIGITAL.TZ</span></div>
+        <div class="social-icons">
+            <a href="https://wa.me/255629128219"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+        <div class="footer-contact">
+            <p>Tupigie/WhatsApp: +255 629 128 219</p>
+        </div>
+        <p class="copyright">&copy; 2025 AD-gaming digital.tz. All rights reserved. <br> Built for Gamers.</p>
+    </footer>
+
+</body>
+</html>
+

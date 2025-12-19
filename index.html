@@ -339,3 +339,64 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD-Gaming Slider</title>
+    <style>
+        /* MUUNDO WA NJE */
+        body {
+            background-color: #0a0a0a; /* Background ya giza */
+            margin: 0;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* CONTAINER YA PICHA */
+        .slider-wrapper {
+            width: 100%;
+            background-color: #111;
+            padding: 15px 0;
+            border-top: 2px solid #7000ff; /* Line ya zambarau juu */
+            border-bottom: 2px solid #7000ff; /* Line ya zambarau chini */
+        }
+
+        /* MUUNDO WA PICHA NDANI YA MARQUEE */
+        .moving-img {
+            width: 280px;      /* Upana wa saizi ya kati */
+            height: 160px;     /* Kimo cha saizi ya kati */
+            object-fit: cover; /* Inakata picha ikae vizuri kwenye fremu */
+            margin: 0 10px;    /* Nafasi kati ya picha na picha */
+            border-radius: 12px; /* Kona zilizoviringa kidogo */
+            border: 2px solid #333; /* Fremu ya kijivu */
+            transition: transform 0.3s;
+        }
+
+        /* Picha ikiguswa (Hover) inalegea kidogo */
+        .moving-img:hover {
+            border-color: #00f2ff; /* Inabadilika kuwa cyan */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-wrapper">
+        <marquee behavior="scroll" direction="left" scrollamount="7">
+            
+            <img src="picha1.jpg" class="moving-img" alt="Slide 1">
+            <img src="picha2.jpg" class="moving-img" alt="Slide 2">
+            <img src="picha3.jpg" class="moving-img" alt="Slide 3">
+            <img src="picha4.jpg" class="moving-img" alt="Slide 4">
+            <img src="picha5.jpg" class="moving-img" alt="Slide 5">
+            <img src="picha6.jpg" class="moving-img" alt="Slide 6">
+            
+        </marquee>
+    </div>
+
+</body>
+</html>
